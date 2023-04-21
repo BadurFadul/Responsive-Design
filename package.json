@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "name": "fs15_2-responsive-design",
+  "description": "Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile": "sass src/styles/style.scss:src/style.css",
+    "compile:watch": "sass --watch src/styles/style.scss:src/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
