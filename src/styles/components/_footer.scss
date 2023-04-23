@@ -1,0 +1,16 @@
+footer {
+    margin-top: 5em;
+    margin-bottom: 0px;
+    & nav{
+        display: flex;
+        justify-content: space-between;
+        
+        & ul {
+            display: flex;
+            gap: 1em;
+        }
+    }
+    & div {
+        margin-left: 2.4em;
+    }
+}

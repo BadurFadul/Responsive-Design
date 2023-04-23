@@ -1,12 +1,67 @@
+@use "../variables/fonts";
+
 .section2{
-    gap: 1em;
-    padding: 1em;
+    gap: 2em;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
 
     & .section2_articles{
+        max-width: 1100px;
+        height: 500px;
         padding: 4em;
-        border-radius: 4em;
-        background-color: lightblue;
+        border-radius: 2em;
+        display: flex;
+        align-items: center;
+        background-size: 100%;
+        transition: background-size 2s ease-in-out;
+
+        &:hover{
+            background-size: 110%;
+        }
+        & h3{
+            font-size: fonts.$h3-med;
+        }
+    }
+     article:nth-child(1){
+        background-image: url("https://images.unsplash.com/photo-1581094725469-f429921c09c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
+        ;
+        background-blend-mode: overlay;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    article:nth-child(2){
+        background-image: url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"),
+        linear-gradient(rgba(84, 66, 10, 0.954), rgba(44, 36, 9, 0.954));
+        ;
+        background-blend-mode: overlay;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    article:nth-child(3){
+        background-image: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
+        ;
+        background-blend-mode: overlay;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.clear{
+    display: flex;
+    justify-content: center;
+}
+.section2_articles_content {
+    & span {
+        position: relative;
+        left: -100%;
+        transition: left 0.2s ease-in-out;
+      }
+    &:hover{
+        & span {
+            left: 0;
+          }
     }
 }

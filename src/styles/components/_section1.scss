@@ -2,12 +2,16 @@
 
 .section1{
     display: grid;
-    gap: 10px;
+    gap: 1em;
     grid-template-areas: 
     "card1 card1 card2 card3"
     "card1 card1 card4 card5";
+    transition: all 0.5s ease-in-out;
+
+    & article:hover{
+        transform:translateY(-2%) ;
+    }
     & article{
-        
         display: flex;
         flex-direction: column;
         color: white;
@@ -27,7 +31,6 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        
     }
     & article:nth-child(2){
         grid-area: card2;
@@ -75,5 +78,6 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
 }
 
