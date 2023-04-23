@@ -1,13 +1,38 @@
+@use "../variables/fonts";
+
 .section3{
     display: flex;
     gap: 1em;
     margin-top: 2em;
 
-    & article{
+    & .section3_articles{
         width: 50%;
         height: 200px;
         padding: 4em;
         border-radius: 2em;
+        background-size: 100%;
+        transition: background-size 1s ease-out 5s;
+
+        &:hover{
+            background-size: 110%;
+        }
+
+        & a{
+            text-decoration: none;
+            color: white;
+        }
+
+        & h3 {
+            font-size: fonts.$h3-medsm;
+        }
+        & button {
+            border-radius: 25px;
+            border: none;
+            padding: .2em;
+            width: 100px;
+        }
+
+        
     }
     article:nth-child(1){
         background-image: url("https://images.unsplash.com/photo-1681050996045-b4c066d17d73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"),
@@ -17,6 +42,20 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        
+
+        & button{
+            color: rgb(82, 24, 24);
+            border: .01px solid rgb(48, 45, 45);
+            background-color: transparent;
+
+            &:hover{
+                background-color: black;
+                color:  rgba(34, 11, 4, 0.954);
+                border: none;
+            }
+        }
+    
     }
     article:nth-child(2){
         background-image: url("https://images.unsplash.com/photo-1679917389967-e0425a1e708b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"),
@@ -26,5 +65,17 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        & button{
+            color: rgb(98, 136, 98);
+            border: .01px solid rgb(69, 63, 63);
+            background-color: transparent;
+
+            &:hover{
+                background-color: black;
+                color: rgba(44, 42, 37, 0.954);
+                border: none;
+            }
+        }
     }
 }

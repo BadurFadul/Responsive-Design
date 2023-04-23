@@ -19,6 +19,13 @@
         padding: 2em;
         border-radius: 1.3em;
         justify-content: space-between;
+        & button {
+            border-radius: 25px;
+            border: none;
+            padding: .3em;
+            width: 65px;
+            font-weight: bold;
+        }
     }
     & article:nth-child(1){
         grid-area: card1;
@@ -46,6 +53,10 @@
         background-repeat: no-repeat;
     }
     & article:nth-child(3){
+        & button{
+            background-color: black;
+            color: rgb(216, 163, 65);
+        }
         grid-area: card3;
         & h3{
             font-size: fonts.$h3-sm;
@@ -67,6 +78,11 @@
     }
     & article:nth-child(5){
         grid-area: card5;
+
+        & button {
+            background-color: black;
+            color: rgba(110, 9, 102, 0.954);
+        }
         & h3{
             font-size: fonts.$h3-sm;
         }

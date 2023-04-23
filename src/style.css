@@ -55,6 +55,13 @@ header {
   border-radius: 1.3em;
   justify-content: space-between;
 }
+.section1 article button {
+  border-radius: 25px;
+  border: none;
+  padding: 0.3em;
+  width: 65px;
+  font-weight: bold;
+}
 .section1 article:nth-child(1) {
   grid-area: card1;
   background-image: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80");
@@ -81,6 +88,10 @@ header {
   grid-area: card3;
   background-color: rgb(216, 163, 65);
 }
+.section1 article:nth-child(3) button {
+  background-color: black;
+  color: rgb(216, 163, 65);
+}
 .section1 article:nth-child(3) h3 {
   font-size: 1.4em;
 }
@@ -103,6 +114,10 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section1 article:nth-child(5) button {
+  background-color: black;
+  color: rgba(110, 9, 102, 0.954);
+}
 .section1 article:nth-child(5) h3 {
   font-size: 1.4em;
 }
@@ -121,13 +136,25 @@ header {
   display: flex;
   align-items: center;
   background-size: 100%;
-  transition: background-size 2s ease-in-out;
+  transition: all 0.5s ease-out;
 }
 .section2 .section2_articles:hover {
   background-size: 110%;
 }
 .section2 .section2_articles h3 {
   font-size: 3em;
+}
+.section2 .section2_articles a {
+  text-decoration: none;
+  color: white;
+}
+.section2 .section2_articles button {
+  border-radius: 25px;
+  border: none;
+  padding: 0.3em;
+  width: 120px;
+  font-weight: bold;
+  background-color: transparent;
 }
 .section2 article:nth-child(1) {
   background-image: url("https://images.unsplash.com/photo-1581094725469-f429921c09c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -136,6 +163,15 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section2 article:nth-child(1) button {
+  color: white;
+  border: 0.01px solid white;
+}
+.section2 article:nth-child(1) button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
 .section2 article:nth-child(2) {
   background-image: url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"), linear-gradient(rgba(84, 66, 10, 0.954), rgba(44, 36, 9, 0.954));
   background-blend-mode: overlay;
@@ -143,12 +179,30 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section2 article:nth-child(2) button {
+  color: black;
+  border: 0.01px solid black;
+}
+.section2 article:nth-child(2) button:hover {
+  background-color: black;
+  color: rgba(84, 66, 10, 0.954);
+  border: none;
+}
 .section2 article:nth-child(3) {
   background-image: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.section2 article:nth-child(3) button {
+  color: white;
+  border: 0.01px solid white;
+}
+.section2 article:nth-child(3) button:hover {
+  background-color: white;
+  color: black;
+  border: none;
 }
 
 .clear {
@@ -170,11 +224,29 @@ header {
   gap: 1em;
   margin-top: 2em;
 }
-.section3 article {
+.section3 .section3_articles {
   width: 50%;
   height: 200px;
   padding: 4em;
   border-radius: 2em;
+  background-size: 100%;
+  transition: background-size 1s ease-out 5s;
+}
+.section3 .section3_articles:hover {
+  background-size: 110%;
+}
+.section3 .section3_articles a {
+  text-decoration: none;
+  color: white;
+}
+.section3 .section3_articles h3 {
+  font-size: 1.6em;
+}
+.section3 .section3_articles button {
+  border-radius: 25px;
+  border: none;
+  padding: 0.2em;
+  width: 100px;
 }
 .section3 article:nth-child(1) {
   background-image: url("https://images.unsplash.com/photo-1681050996045-b4c066d17d73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"), linear-gradient(rgba(76, 18, 6, 0.954), rgba(34, 11, 4, 0.954));
@@ -183,6 +255,16 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section3 article:nth-child(1) button {
+  color: rgb(82, 24, 24);
+  border: 0.01px solid rgb(48, 45, 45);
+  background-color: transparent;
+}
+.section3 article:nth-child(1) button:hover {
+  background-color: black;
+  color: rgba(34, 11, 4, 0.954);
+  border: none;
+}
 .section3 article:nth-child(2) {
   background-image: url("https://images.unsplash.com/photo-1679917389967-e0425a1e708b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"), linear-gradient(rgba(44, 42, 37, 0.954), rgba(48, 46, 45, 0.954));
   background-blend-mode: overlay;
@@ -190,17 +272,46 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section3 article:nth-child(2) button {
+  color: rgb(98, 136, 98);
+  border: 0.01px solid rgb(69, 63, 63);
+  background-color: transparent;
+}
+.section3 article:nth-child(2) button:hover {
+  background-color: black;
+  color: rgba(44, 42, 37, 0.954);
+  border: none;
+}
 
 .section4 {
   margin-top: 2.5em;
   display: flex;
   gap: 1em;
 }
-.section4 article {
+.section4 .section4_article {
   width: 50%;
   height: 200px;
   padding: 4em;
   border-radius: 2em;
+  background-size: 100%;
+  transition: background-size 1s ease-out 0.2s;
+}
+.section4 .section4_article:hover {
+  background-size: 110%;
+}
+.section4 .section4_article a {
+  text-decoration: none;
+  color: white;
+}
+.section4 .section4_article h3 {
+  font-size: 1.6em;
+}
+.section4 .section4_article button {
+  border-radius: 25px;
+  border: none;
+  padding: 0.1em;
+  width: 105px;
+  font-size: 11px;
 }
 .section4 article:nth-child(1) {
   background-image: url("https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -209,6 +320,16 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section4 article:nth-child(1) button {
+  color: white;
+  border: 0.01px solid white;
+  background-color: transparent;
+}
+.section4 article:nth-child(1) button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
 .section4 article:nth-child(2) {
   background-image: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"), linear-gradient(rgba(44, 42, 37, 0.954), rgba(48, 46, 45, 0.954));
   background-blend-mode: overlay;
@@ -216,12 +337,32 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.section4 article:nth-child(2) button {
+  color: white;
+  border: 0.01px solid white;
+  background-color: transparent;
+}
+.section4 article:nth-child(2) button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
 .section4 article:nth-child(3) {
   background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"), linear-gradient(rgba(50, 31, 48, 0.954), rgba(27, 24, 31, 0.954));
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.section4 article:nth-child(3) button {
+  color: white;
+  border: 0.01px solid white;
+  background-color: transparent;
+}
+.section4 article:nth-child(3) button:hover {
+  background-color: white;
+  color: black;
+  border: none;
 }
 
 .divbut {
@@ -236,6 +377,10 @@ header {
   color: white;
   background-color: #2c2c33;
   border: none;
+}
+.divbut button:hover {
+  background-color: rgb(150, 115, 51);
+  color: black;
 }
 
 .subscribe {
@@ -280,6 +425,10 @@ header {
   border-radius: 25px;
   color: white;
 }
+.subscribe button:hover {
+  background-color: rgb(150, 115, 51);
+  color: black;
+}
 
 @keyframes typing {
   from {
@@ -314,7 +463,7 @@ footer div {
 }
 
 body {
-  margin: 4em;
+  margin: 5em;
   padding: 0;
   background-color: #1c1b1b;
   color: white;
