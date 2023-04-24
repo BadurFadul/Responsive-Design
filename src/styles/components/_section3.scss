@@ -11,7 +11,7 @@
         padding: 4em;
         border-radius: 2em;
         background-size: 100%;
-        transition: background-size 1s ease-out 5s;
+        transition: background-size 1s ease-out 0.2s;
 
         &:hover{
             background-size: 110%;
